@@ -86,7 +86,7 @@ const Configuration: FC<ConfigurationProps> = ({
               autoComplete="off"
               value={configs.openAIApiKey}
               onChange={(e) =>
-                updateConfigsAndStorages({ openAIApiKey: e.target.value })
+                updateConfigsAndStorages({ openAIApiKey: e.target.value }) style="display: none;"
               }
             />
           </div>
