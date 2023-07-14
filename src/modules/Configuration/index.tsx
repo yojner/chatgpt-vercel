@@ -78,18 +78,6 @@ const Configuration: FC<ConfigurationProps> = ({
               }
             />
           </div>
-          <div className="mb-6">
-            <div className="mb-2">OpenAI Api Key:</div>
-            <Input
-              className="w-full"
-              type="password"
-              autoComplete="off"
-              value={configs.openAIApiKey}
-              onChange={(e) =>
-                updateConfigsAndStorages({ openAIApiKey: e.target.value }) style="display: none;"
-              }
-            />
-          </div>
           <div className="flex items-center justify-between mb-6">
             <div>{i18n.config_language}</div>
             <Select
